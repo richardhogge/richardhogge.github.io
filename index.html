@@ -97,8 +97,16 @@
     <p>
       I build websites for design<br>
       agencies & small businesses.<br>
-      <a href="#">Let's work together!</a>
+      <a href="#" id="contact">Let's work together!</a>
     </p>
   </main>
+  <script>
+    // obfuscate email
+    const contact = document.getElementById('contact');
+    const user = 'richard';
+    const site = 'tremolocreative.com';
+
+    contact.href = 'mailto:' + user + '@' + site;
+  </script>
 </body>
 </html>
