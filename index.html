@@ -4,10 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Richard Hogge &mdash; Front End Developer</title>
+  <link rel="icon" href="https://secureservercdn.net/50.62.89.79/y1z.3d3.myftpupload.com/wp-content/uploads/2020/09/cropped-android-chrome-512x512-1-32x32.png" sizes="32x32">
+  <link rel="icon" href="https://secureservercdn.net/50.62.89.79/y1z.3d3.myftpupload.com/wp-content/uploads/2020/09/cropped-android-chrome-512x512-1-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="https://secureservercdn.net/50.62.89.79/y1z.3d3.myftpupload.com/wp-content/uploads/2020/09/cropped-android-chrome-512x512-1-180x180.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <style>
     body {
-      color: #FFF;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+      color: white;
       font-family: 'circular-pro-book';
       font-size: 1.5rem;
       margin: 0;
@@ -21,8 +28,20 @@
       -webkit-text-size-adjust: 100%;
     }
 
+    header {
+      display: flex;
+      justify-content: space-between;
+      margin: 2.5rem 3.125rem;
+    }
+
     main {
-      margin: 5rem;
+      margin: 2.5rem 3.125rem;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      margin: 2.5rem 3.125rem;
     }
 
     h1,
@@ -34,12 +53,131 @@
 
     p {
       font-family: 'circular-pro-bold';
-      font-size: 5rem;
+      font-size: 6.25rem;
+      line-height: 1.125em;
       margin: 0;
+      max-width: 85rem;
+      opacity: .4;
     }
 
     a {
-      color: #FFF;
+      color: white;
+      text-decoration: none;
+      transition: opacity .2s ease;
+    }
+
+    a:hover {
+      opacity: .75;
+    }
+
+    #contact > span {
+      display: block;
+      float: left;
+    }
+
+    #contact > i {
+      position: relative;
+      display: block;
+      float: left;
+      width: 1.625rem;
+      height: .125rem;
+      top: 1.0625rem;
+      left: .625rem;
+      background: white;
+      transition: width .2s ease;
+    }
+
+    #contact > i::before {
+      content: '';
+      position: absolute;
+      top: -.25rem;
+      right: -.125rem;
+      width: .75rem;
+      height: .125rem;
+      background: white;      
+      transform: rotate(45deg);
+    }
+
+    #contact > i::after {
+      content: '';
+      position: absolute;
+      top: .25rem;
+      right: -.125rem;
+      width: .75rem;
+      height: .125rem;
+      background: white;      
+      transform: rotate(135deg);
+    }
+
+    #contact:hover > i {
+      width: 3.125rem;
+    }
+
+    ul.social {
+      font-size: 2rem;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul.social > li {
+      float: left;
+    }
+
+    ul.social > li > a {
+      margin: 0 .625rem;
+    }
+
+    ul.social > li:last-child > a {
+      margin-right: 0;
+    }
+
+    @media only screen and (max-width: 1479px) {
+      p {
+        font-size: 5rem;
+        max-width: 75rem;
+      }
+    }
+
+    @media only screen and (max-width: 1319px) {
+      p {
+        font-size: 4.5rem;
+        max-width: 70rem;
+      }
+    }
+
+    @media only screen and (max-width: 1079px) {
+      p {
+        font-size: 3.75rem;
+        max-width: 57.5rem;
+      }
+    }
+
+    @media only screen and (max-width: 979px) {
+      header {
+        margin: 1.875rem;
+      }
+
+      main {
+        margin: 1.875rem;
+      }
+
+      footer {
+        margin: 1.875rem;
+      }
+
+      p {
+        font-size: 3.125rem;
+        max-width: 47.5rem;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      body,
+      h1,
+      h4 {
+        font-size: 1.25rem;
+      }
     }
 
     @-keyframes colorShift {
@@ -116,31 +254,34 @@
   </header>
   <main>
     <p>
-      I build websites for design<br>
-      agencies & small businesses.<br>
+      I build websites for design
+      agencies & small businesses.
       Let's work together!
     </p>
   </main>
   <footer>
-    <a href="#" id="contact">Drop me a line</a>
+    <a href="#" id="contact">
+      <span>Drop me a line</span>
+      <i class="arrow"></i>
+    </a>
     <ul class="social">
       <li>
-        <a href="https://github.com/richardhogge">
+        <a href="https://github.com/richardhogge" alt="GitHub" target="_blank">
           <i class="fab fa-github"></i>
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/richard-hogge-25a3b66/">
+        <a href="https://www.linkedin.com/in/richard-hogge-25a3b66/" alt="LinkedIn" target="_blank">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/armchair_boogie/">
+        <a href="https://www.instagram.com/armchair_boogie/" alt="Instagram" target="_blank">
           <i class="fab fa-instagram"></i>
         </a>
       </li>
       <li>
-        <a href="https://twitter.com/teetotalerrr">
+        <a href="https://twitter.com/teetotalerrr" alt="Twitter" target="_blank">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
