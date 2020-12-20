@@ -4,253 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Richard Hogge &mdash; Front End Developer</title>
-  <link rel="icon" href="https://secureservercdn.net/50.62.89.79/y1z.3d3.myftpupload.com/wp-content/uploads/2020/09/cropped-android-chrome-512x512-1-32x32.png" sizes="32x32">
-  <link rel="icon" href="https://secureservercdn.net/50.62.89.79/y1z.3d3.myftpupload.com/wp-content/uploads/2020/09/cropped-android-chrome-512x512-1-192x192.png" sizes="192x192">
-  <link rel="apple-touch-icon" href="https://secureservercdn.net/50.62.89.79/y1z.3d3.myftpupload.com/wp-content/uploads/2020/09/cropped-android-chrome-512x512-1-180x180.png">
+  <link rel="icon" href="assets/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="assets/images/favicon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="assets/images/favicon-180x180.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100vh;
-      color: white;
-      font-family: 'circular-pro-book';
-      font-size: 1.5rem;
-      margin: 0;
-      animation: colorShift 30s linear infinite;
-      -webkit-animation: colorShift 30s linear infinite;
-      -moz-animation: colorShift 30s linear infinite;
-      -ms-animation: colorShift 30s linear infinite;
-      background: #44889F;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-text-size-adjust: 100%;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      margin: 2.5rem 3.125rem;
-    }
-
-    main {
-      margin: 2.5rem 3.125rem;
-    }
-
-    footer {
-      display: flex;
-      justify-content: space-between;
-      margin: 2.5rem 3.125rem;
-    }
-
-    h1,
-    h4 {
-      margin: 0;
-      font-size: 1.5rem;
-      font-weight: normal;
-    }
-
-    p {
-      font-family: 'circular-pro-bold';
-      font-size: 6.25rem;
-      line-height: 1.125em;
-      margin: 0;
-      max-width: 85rem;
-      opacity: .4;
-    }
-
-    a {
-      color: white;
-      text-decoration: none;
-      transition: opacity .2s ease;
-    }
-
-    a:hover {
-      opacity: .75;
-    }
-
-    #contact > span {
-      display: block;
-      float: left;
-    }
-
-    #contact > i {
-      position: relative;
-      display: block;
-      float: left;
-      width: 1.625rem;
-      height: .125rem;
-      top: 1.0625rem;
-      left: .625rem;
-      background: white;
-      transition: width .2s ease;
-    }
-
-    #contact > i::before {
-      content: '';
-      position: absolute;
-      top: -.25rem;
-      right: -.125rem;
-      width: .75rem;
-      height: .125rem;
-      background: white;      
-      transform: rotate(45deg);
-    }
-
-    #contact > i::after {
-      content: '';
-      position: absolute;
-      top: .25rem;
-      right: -.125rem;
-      width: .75rem;
-      height: .125rem;
-      background: white;      
-      transform: rotate(135deg);
-    }
-
-    #contact:hover > i {
-      width: 3.125rem;
-    }
-
-    ul.social {
-      font-size: 2rem;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    ul.social > li {
-      float: left;
-    }
-
-    ul.social > li > a {
-      margin: 0 .625rem;
-    }
-
-    ul.social > li:last-child > a {
-      margin-right: 0;
-    }
-
-    @media only screen and (max-width: 1479px) {
-      p {
-        font-size: 5rem;
-        max-width: 75rem;
-      }
-    }
-
-    @media only screen and (max-width: 1319px) {
-      p {
-        font-size: 4.5rem;
-        max-width: 70rem;
-      }
-    }
-
-    @media only screen and (max-width: 1079px) {
-      p {
-        font-size: 3.75rem;
-        max-width: 57.5rem;
-      }
-    }
-
-    @media only screen and (max-width: 979px) {
-      header {
-        margin: 1.875rem;
-      }
-
-      main {
-        margin: 1.875rem;
-      }
-
-      footer {
-        margin: 1.875rem;
-      }
-
-      p {
-        font-size: 3.125rem;
-        max-width: 47.5rem;
-      }
-    }
-
-    @media only screen and (max-width: 767px) {
-      body,
-      h1,
-      h4 {
-        font-size: 1.25rem;
-      }
-    }
-
-    @-keyframes colorShift {
-      0%   { background: #44889F; }
-      10%  { background: #44529F; }
-      20%  { background: #6D449F; }
-      30%  { background: #9F449A; }
-      40%  { background: #9F4464; }
-      50%  { background: #9F5B44; }
-      60%  { background: #9F9144; }
-      70%  { background: #769F44; }
-      80%  { background: #449F49; }
-      90%  { background: #449F49; }
-      100% { background: #44889F; }
-    }
-
-    @-webkit-keyframes colorShift {
-      0%   { background: #44889F; }
-      10%  { background: #44529F; }
-      20%  { background: #6D449F; }
-      30%  { background: #9F449A; }
-      40%  { background: #9F4464; }
-      50%  { background: #9F5B44; }
-      60%  { background: #9F9144; }
-      70%  { background: #769F44; }
-      80%  { background: #449F49; }
-      90%  { background: #449F49; }
-      100% { background: #44889F; }
-    }
-
-    @-moz-keyframes colorShift {
-      0%   { background: #44889F; }
-      10%  { background: #44529F; }
-      20%  { background: #6D449F; }
-      30%  { background: #9F449A; }
-      40%  { background: #9F4464; }
-      50%  { background: #9F5B44; }
-      60%  { background: #9F9144; }
-      70%  { background: #769F44; }
-      80%  { background: #449F49; }
-      90%  { background: #449F49; }
-      100% { background: #44889F; }
-    }
-
-    @-ms-keyframes colorShift {
-      0%   { background: #44889F; }
-      10%  { background: #44529F; }
-      20%  { background: #6D449F; }
-      30%  { background: #9F449A; }
-      40%  { background: #9F4464; }
-      50%  { background: #9F5B44; }
-      60%  { background: #9F9144; }
-      70%  { background: #769F44; }
-      80%  { background: #449F49; }
-      90%  { background: #449F49; }
-      100% { background: #44889F; }
-    }
-
-    @font-face {  
-      font-family: 'circular-pro-book';  
-      src: url('assets/CircularPro-Book.otf') format('opentype');  
-    }
-
-    @font-face {  
-      font-family: 'circular-pro-bold';  
-      src: url('assets/CircularPro-Bold.otf') format('opentype');  
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
-    <h1>Richard Hogge &mdash; Frontend Developer</h1>
-    <h4>Los Angeles, CA</h4>
+    <h1>
+      <span class="name">Richard Hogge</span>
+      <span class="mdash">&mdash;</span>
+      <span class="job">Frontend Developer</span>
+    </h1>
+    <h4 id="la">
+      <i class="fas fa-sun fa-slow-spin"></i> Los Angeles, CA
+    </h4>
   </header>
   <main>
     <p>
@@ -258,6 +27,9 @@
       agencies & small businesses.
       Let's work together!
     </p>
+    <!-- <video autoplay muted loop id="myVideo">
+      <source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/GTYSdDW/santa-clarita-sand-fire-2016-day-to-night-sunset-timelapse-from-sun-valley-ca_botkhm9___e0babd61bd38d1bb16d113b6aa6f7a2c__P360.mp4" type="video/mp4">
+    </video> -->
   </main>
   <footer>
     <a href="#" id="contact">
@@ -287,13 +59,6 @@
       </li>
     </ul>
   </footer>
-  <script>
-    // obfuscate email
-    const contact = document.getElementById('contact');
-    const user = 'richard';
-    const site = 'tremolocreative.com';
-
-    contact.href = 'mailto:' + user + '@' + site;
-  </script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
