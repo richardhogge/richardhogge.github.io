@@ -84,7 +84,7 @@ a:hover {
   position: relative;
   display: block;
   float: left;
-  width: 1.625rem;
+  width: 1.6875rem;
   height: .125rem;
   top: .9375rem;
   left: .9375rem;
@@ -193,6 +193,15 @@ ul.social > li:last-child > a {
 
   p {
     font-size: 2.125rem;
+  }
+
+  #contact > i {
+    width: 1.5rem;
+    top: .75rem;
+  }
+
+  #contact:hover > i {
+    width: 3rem;
   }
 }
 
