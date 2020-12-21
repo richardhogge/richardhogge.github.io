@@ -28,7 +28,6 @@ main {
 footer {
   display: flex;
   justify-content: space-between;
-  margin: 2.5rem 3.125rem;
 }
 
 h1,
@@ -72,6 +71,11 @@ a:hover {
   font-size: 2rem;
   margin-right: .375rem;
   animation: fa-spin 15s infinite linear;
+}
+
+footer > a,
+ul.social {
+  margin: 2.5rem 3.125rem;
 }
 
 #contact:hover {
@@ -125,7 +129,6 @@ ul.social {
   font-size: 2rem;
   line-height: 0;
   list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -170,10 +173,6 @@ ul.social > li:last-child > a {
 
   main {
     margin: 1.875rem;
-  }
-
-  footer {
-    margin: 0;
   }
 
   footer > a,
@@ -266,6 +265,7 @@ ul.social > li:last-child > a {
 
   p {
     font-size: 2.375rem;
+    opacity: .45;
   }
 
   footer {
