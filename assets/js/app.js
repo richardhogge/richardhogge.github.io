@@ -21,5 +21,3 @@ const site = 'tremolocreative.com';
 const contact = document.getElementById('contact');
 
 contact.href = 'mailto:' + user + '@' + site;
-
-console.log('github connection test');
