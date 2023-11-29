@@ -12,7 +12,7 @@ la.onmouseover = function() {
 la.onmouseout = function() {
   video.style.opacity = '0';
   about.style.opacity = '.4';
-  // at end of video fade out anyway
+  // at end of video fade out anyway 
 }
 
 // Obfuscate Email
