@@ -22,4 +22,4 @@ const contact = document.getElementById('contact');
 
 contact.href = 'mailto:' + user + '@' + site;
 
-consiole.log('ssh keyphrase test');
+console.log('github connection test');
