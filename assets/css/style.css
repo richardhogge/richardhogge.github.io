@@ -1,9 +1,14 @@
 /* Page Layout */
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   color: white;
   font-family: 'circular-pro-book';
   font-size: 1.5rem;
