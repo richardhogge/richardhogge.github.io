@@ -314,7 +314,8 @@ ul.social > li:last-child > a {
   }
 
   p {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    letter-spacing: -1%;
     opacity: .45 !important;
   }
 
